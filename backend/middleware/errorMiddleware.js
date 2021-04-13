@@ -1,8 +1,6 @@
 const notFound = (req, res, next) => {
-  console.log('404a inside')
-
   const error = new Error(`Not Found - ${req.originalUrl}`)
-  console.log('404 inside')
+
   res.status(404)
   next(error)
 }
